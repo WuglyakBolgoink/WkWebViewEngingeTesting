@@ -1,0 +1,17 @@
+{
+    "name": "de.cyberkatze.mfileselect",
+    "displayName": "mFileSelect",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "cordova prepare",
+        "wkwebview:add": "cordova plugin add cordova-plugin-wkwebview-engine --save",
+        "wkwebview:remove": "cordova plugin remove cordova-plugin-wkwebview-engine --save",
+        "postwkwebview:add": "npm run prepare",
+        "postwkwebview:remove": "npm run prepare"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0"
+}
