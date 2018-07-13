@@ -6,15 +6,6 @@
             templateUrl: 'app.html',
             controller: TestComponent,
             bindings: {
-                isAl: '=',
-                isSach: '=',
-                showSchaden: '=',
-                showAnmeldungbuau: '=',
-                cbHistory: '&',
-                cbBanks: '&',
-                cbDocs: '&',
-                cbHotline: '&',
-                cbAnmeldungbuau: '&'
             }
         })
         .run();
@@ -31,6 +22,8 @@
 
         $ctrl.$onInit = () => {
             $ctrl.file = null;
+
+            $ctrl.name = 'file was not selected';
         };
 
         $ctrl.uploadFile = function($files, $invalidFiles) {
@@ -60,6 +53,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
+                
+                <input type="file" class="form-control">
 
                     <p data-ng-bind="$ctrl.name"></p>
 

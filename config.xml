@@ -33,7 +33,6 @@
         <preference name="BackupWebStorage" value="none" />
         <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
         <preference name="Orientation" value="all" />
-
         <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
             <string>Der Zugriff wird verwendet, um Fotos zur Auswahl zu stellen</string>
         </edit-config>
@@ -56,9 +55,7 @@
             </array>
         </edit-config>
     </platform>
-
     <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
-
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="FadeSplashScreen" value="true" />
@@ -69,10 +66,9 @@
     <preference name="SplashScreenSpinnerColor" value="#ffffff" />
     <preference name="TopActivityIndicator" value="whiteLarge" />
     <preference name="DisallowOverscroll" value="true" />
-
     <engine name="ios" spec="~4.5.3" />
-
-    <plugin name="cordova-plugin-file" spec="~6.0.1" />
-    <plugin name="cordova-plugin-file-transfer" spec="~1.7.0" />
     <plugin name="cordova-plugin-wkwebview-engine" spec="~1.1.4" />
+    <plugin name="cordova-plugin-file-transfer" spec="~1.7.0" />
+    <plugin name="cordova-plugin-file" spec="~4.3.2" />
+    <plugin name="cordova-plugin-console" spec="~1.1.0" />
 </widget>
